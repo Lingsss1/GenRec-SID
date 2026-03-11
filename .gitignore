@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Model weights & checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+models/
+train/runs/
+checkpoint-*/
+
+# Large data files
+*.parquet
+*.jsonl.gz
+*.jsonl
+*.csv
+data/raw/
+
+# Large JSON data (SID mappings, item metadata > 1MB)
+data/sequences/S2/
+data/sequences/S2.5/
+data/sequences/S3/
+data/sequences/S1/data/
+embeddings/sids/S2_sid_mapping.json
+embeddings/sids/S2.5_sid_mapping.json
+embeddings/sids/S3_sid_mapping.json
+embeddings/S3_item_embeddings.pt
+
+# FAISS index (binary)
+embeddings/rq_vae/faiss_rq.index
+
+# Trie files (large JSON, can be regenerated)
+trie/S2_prefix_trie.json
+trie/S2.5_prefix_trie.json
+trie/S3_prefix_trie.json
+
+# Generated images
+*.png
+*.jpg
+*.jpeg
+
+# Archives
+*.tar.gz
+*.zip
+*.rar
+
+# Logs
+*.log
+wandb/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/

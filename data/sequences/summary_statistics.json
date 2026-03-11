@@ -1,0 +1,58 @@
+[
+  {
+    "subset_name": "S1",
+    "N_train": 1464,
+    "D_train": 2761,
+    "C_mean": 1.885928961748634,
+    "avg_context_length": 1.379934806229627,
+    "n_valid": 2357,
+    "n_test": 2357,
+    "avg_valid_input_length": 1.2829868476877386,
+    "avg_test_input_length": 2.282986847687739,
+    "test_coverage_in_train": 0.49382716049382713,
+    "n_test_items": 1215,
+    "n_test_items_in_train": 600
+  },
+  {
+    "subset_name": "S2",
+    "N_train": 15647,
+    "D_train": 54573,
+    "C_mean": 3.4877612321850835,
+    "avg_context_length": 1.7255236105766587,
+    "n_valid": 47048,
+    "n_test": 47048,
+    "avg_valid_input_length": 1.6321628974664173,
+    "avg_test_input_length": 2.6321628974664173,
+    "test_coverage_in_train": 0.8214751958224543,
+    "n_test_items": 12256,
+    "n_test_items_in_train": 10068
+  },
+  {
+    "subset_name": "S2.5",
+    "N_train": 48280,
+    "D_train": 258636,
+    "C_mean": 5.357000828500414,
+    "avg_context_length": 2.151378771710048,
+    "n_valid": 221072,
+    "n_test": 221072,
+    "avg_valid_input_length": 2.2842558080625315,
+    "avg_test_input_length": 3.2842558080625315,
+    "test_coverage_in_train": 0.9720251853032598,
+    "n_test_items": 37641,
+    "n_test_items_in_train": 36588
+  },
+  {
+    "subset_name": "S3",
+    "N_train": 99259,
+    "D_train": 667172,
+    "C_mean": 6.721526511449843,
+    "avg_context_length": 2.849544045613425,
+    "n_valid": 388638,
+    "n_test": 388638,
+    "avg_valid_input_length": 4.109266206598428,
+    "avg_test_input_length": 5.109266206598428,
+    "test_coverage_in_train": 0.9953563730524976,
+    "n_test_items": 69127,
+    "n_test_items_in_train": 68806
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "train_file": "data/sequences/S1/train.csv",
+  "eval_file": "data/sequences/S1/valid.csv",
+  "sid_index_path": "data/sequences/S1/S1.index.json",
+  "item_meta_path": "data/sequences/S1/S1.item.json",
+  "output_dir": "train/runs/M_N_5K",
+  "batch_size": 128,
+  "micro_batch_size": 32,
+  "num_epochs": 3,
+  "learning_rate": 3e-4,
+  "cutoff_len": 512,
+  "warmup_steps": 500,
+  "seed": 42,
+  "sample": -1,
+  "category": "cell phones and accessories",
+  "wandb_project": "cellphones_phase5",
+  "wandb_run_name": "M_N_5K"
+}

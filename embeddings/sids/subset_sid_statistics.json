@@ -1,0 +1,26 @@
+{
+  "S3": {
+    "n_items": 100000,
+    "collision_rate": 0.35880999999999996,
+    "trie_nodes": 18439,
+    "level0_choices": 256
+  },
+  "S2.5": {
+    "n_items": 50000,
+    "collision_rate": 0.25198,
+    "trie_nodes": 14504,
+    "level0_choices": 254
+  },
+  "S2": {
+    "n_items": 20000,
+    "collision_rate": 0.14390000000000003,
+    "trie_nodes": 9545,
+    "level0_choices": 254
+  },
+  "S1": {
+    "n_items": 5000,
+    "collision_rate": 0.04920000000000002,
+    "trie_nodes": 3995,
+    "level0_choices": 251
+  }
+}

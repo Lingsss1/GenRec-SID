@@ -1,0 +1,49 @@
+{
+  "models": [
+    {
+      "name": "M_N_5K",
+      "N": 5000,
+      "model_dir": "models/results_20260306_142557/train/runs/M_N_5K/final_checkpoint",
+      "test_file": "data/sequences/S1/test.csv",
+      "index_file": "data/sequences/S1/S1.index.json",
+      "trie_file": "trie/S1_prefix_trie.json",
+      "available": true,
+      "note": "从本地上传"
+    },
+    {
+      "name": "M_N_20K",
+      "N": 20000,
+      "model_dir": "train/runs/M_N_20K/final_checkpoint",
+      "test_file": "data/sequences/S2/test.csv",
+      "index_file": "data/sequences/S2/S2.index.json",
+      "trie_file": "trie/S2_prefix_trie.json",
+      "available": true,
+      "note": "训练完成"
+    },
+    {
+      "name": "M_N_50K",
+      "N": 50000,
+      "model_dir": "train/runs/M_N_50K/final_checkpoint",
+      "test_file": "data/sequences/S2.5/test.csv",
+      "index_file": "data/sequences/S2.5/S2.5.index.json",
+      "trie_file": "trie/S2.5_prefix_trie.json",
+      "available": true,
+      "note": "已训练完成"
+    },
+    {
+      "name": "M_N_100K",
+      "N": 100000,
+      "model_dir": "train/runs/M_N_100K/final_checkpoint",
+      "test_file": "data/sequences/S3/test.csv",
+      "index_file": "data/sequences/S3/S3.index.json",
+      "trie_file": "trie/S3_prefix_trie.json",
+      "available": true,
+      "note": "已训练完成"
+    }
+  ],
+  "beams": [20, 50, 100],
+  "topk": 10,
+  "batch_size": 4,
+  "output_json": "analysis/results_summary.json",
+  "max_samples": 5000
+}

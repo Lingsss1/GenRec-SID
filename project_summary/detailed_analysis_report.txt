@@ -1,0 +1,181 @@
+================================================================================
+Cell Phones & Accessories Generative Rec - Scaling Law Analysis Report
+================================================================================
+
+
+================================================================================
+Beam = 20 (n=4 data points)
+================================================================================
+
+Model                       k      R^2          RSS        AIC        BIC
+----------------------------------------------------------------------
+power_law_saturated         3   0.9947     1.03e-06     -43.34     -45.18
+power_law_pure              2   0.9712     5.63e-06     -38.54     -39.77
+log                         2   0.9388     1.20e-05     -35.52     -36.75
+linear                      2   0.6350     7.15e-05     -28.38     -29.61
+exponential                 3   1.0000     5.43e-10     -73.53     -75.37
+
+Best by AIC: exponential
+Best by BIC: exponential
+
+--- Power Law + Saturation: Detailed Parameters ---
+  alpha = 3.2983 +/- 5.6389  (95% CI: [-7.7540, 14.3507])
+  beta  = 0.5903 +/- 0.2185  (95% CI: [0.1620, 1.0186])
+  gamma = 0.0209 +/- 0.0037  (95% CI: [0.0136, 0.0281])
+  R^2   = 0.994740
+  Formula: HR = 3.2983 * N^(-0.5903) + 0.0209
+
+--- Residual Analysis ---
+  Residuals: ['-0.000048', '0.000405', '-0.000811', '0.000454']
+  Mean:  0.000000 (should be ~0)
+  Std:   0.000507
+  Max |residual|: 0.000811
+
+--- Point-wise Fit Quality ---
+  N=  5000  observed=0.0424  predicted=0.0425  error=+0.11%
+  N= 20000  observed=0.0308  predicted=0.0304  error=-1.32%
+  N= 50000  observed=0.0256  predicted=0.0264  error=+3.17%
+  N=100000  observed=0.0250  predicted=0.0245  error=-1.81%
+
+--- Overfitting Risk Assessment ---
+  Data points (n):  4
+  Parameters (k):   3
+  Degrees of freedom (n-k): 1
+  [WARNING] DOF=1, model is near-interpolating. R^2 is inflated and confidence intervals are wide. The fit captures the trend but statistical significance is limited. More data points (N=10K, 30K, 70K, etc.) are needed for robust validation.
+
+--- Saturated vs Pure Power Law ---
+  Delta AIC (pure - saturated) = 4.80
+  -> Saturated model preferred (Delta AIC > 2)
+
+
+================================================================================
+Beam = 50 (n=4 data points)
+================================================================================
+
+Model                       k      R^2          RSS        AIC        BIC
+----------------------------------------------------------------------
+power_law_saturated         3   0.9857     3.02e-06     -39.03     -40.87
+power_law_pure              2   0.9485     1.09e-05     -35.89     -37.12
+log                         2   0.9097     1.92e-05     -33.64     -34.87
+linear                      2   0.5817     8.87e-05     -27.51     -28.74
+exponential                 3   0.9969     6.53e-07     -45.16     -47.00
+
+Best by AIC: exponential
+Best by BIC: exponential
+
+--- Power Law + Saturation: Detailed Parameters ---
+  alpha = 8.2871 +/- 26.2287  (95% CI: [-43.1211, 59.6953])
+  beta  = 0.7021 +/- 0.3945  (95% CI: [-0.0712, 1.4754])
+  gamma = 0.0232 +/- 0.0047  (95% CI: [0.0139, 0.0325])
+  R^2   = 0.985743
+  Formula: HR = 8.2871 * N^(-0.7021) + 0.0232
+
+--- Residual Analysis ---
+  Residuals: ['-0.000068', '0.000650', '-0.001393', '0.000811']
+  Mean:  0.000000 (should be ~0)
+  Std:   0.000870
+  Max |residual|: 0.001393
+
+--- Point-wise Fit Quality ---
+  N=  5000  observed=0.0441  predicted=0.0442  error=+0.15%
+  N= 20000  observed=0.0318  predicted=0.0312  error=-2.04%
+  N= 50000  observed=0.0260  predicted=0.0274  error=+5.36%
+  N=100000  observed=0.0266  predicted=0.0258  error=-3.05%
+
+--- Overfitting Risk Assessment ---
+  Data points (n):  4
+  Parameters (k):   3
+  Degrees of freedom (n-k): 1
+  [WARNING] DOF=1, model is near-interpolating. R^2 is inflated and confidence intervals are wide. The fit captures the trend but statistical significance is limited. More data points (N=10K, 30K, 70K, etc.) are needed for robust validation.
+
+--- Saturated vs Pure Power Law ---
+  Delta AIC (pure - saturated) = 3.13
+  -> Saturated model preferred (Delta AIC > 2)
+
+
+================================================================================
+Beam = 100 (n=4 data points)
+================================================================================
+
+Model                       k      R^2          RSS        AIC        BIC
+----------------------------------------------------------------------
+power_law_saturated         3   0.9936     1.44e-06     -41.99     -43.83
+power_law_pure              2   0.9672     7.38e-06     -37.46     -38.69
+log                         2   0.9327     1.52e-05     -34.58     -35.81
+linear                      2   0.6229     8.49e-05     -27.69     -28.92
+exponential                 3   0.9999     2.76e-08     -57.81     -59.65
+
+Best by AIC: exponential
+Best by BIC: exponential
+
+--- Power Law + Saturation: Detailed Parameters ---
+  alpha = 4.4597 +/- 8.6773  (95% CI: [-12.5479, 21.4672])
+  beta  = 0.6199 +/- 0.2468  (95% CI: [0.1362, 1.1036])
+  gamma = 0.0223 +/- 0.0040  (95% CI: [0.0144, 0.0302])
+  R^2   = 0.993593
+  Formula: HR = 4.4597 * N^(-0.6199) + 0.0223
+
+--- Residual Analysis ---
+  Residuals: ['-0.000054', '0.000471', '-0.000961', '0.000543']
+  Mean:  0.000000 (should be ~0)
+  Std:   0.000601
+  Max |residual|: 0.000961
+
+--- Point-wise Fit Quality ---
+  N=  5000  observed=0.0450  predicted=0.0450  error=+0.12%
+  N= 20000  observed=0.0324  predicted=0.0319  error=-1.45%
+  N= 50000  observed=0.0268  predicted=0.0278  error=+3.58%
+  N=100000  observed=0.0264  predicted=0.0259  error=-2.06%
+
+--- Overfitting Risk Assessment ---
+  Data points (n):  4
+  Parameters (k):   3
+  Degrees of freedom (n-k): 1
+  [WARNING] DOF=1, model is near-interpolating. R^2 is inflated and confidence intervals are wide. The fit captures the trend but statistical significance is limited. More data points (N=10K, 30K, 70K, etc.) are needed for robust validation.
+
+--- Saturated vs Pure Power Law ---
+  Delta AIC (pure - saturated) = 4.53
+  -> Saturated model preferred (Delta AIC > 2)
+
+
+================================================================================
+CROSS-BEAM CONSISTENCY CHECK
+================================================================================
+  beta values across beams: ['0.5903', '0.7021', '0.6199']
+  beta mean: 0.6374, std: 0.0473
+  gamma values across beams: ['0.0209', '0.0232', '0.0223']
+  gamma mean: 0.0221, std: 0.0010
+  -> beta is consistent across beam sizes (std < 0.1)
+
+================================================================================
+METHODOLOGICAL NOTES
+================================================================================
+
+1. Model Form: HR@10(N) = alpha * N^(-beta) + gamma
+   - Standard power-law + saturation form from scaling laws literature
+   - Ref: Kaplan et al. 2020 (Neural Scaling Laws): Loss ~ N^{-alpha}
+   - Ref: Zhang et al. 2022 (DLRM Scaling): CTR ~ Data^{0.28}
+   - Ref: Yan et al. 2025 (LUM): power-law improvement in generative rec
+   - Innovation: first application to catalog size N dimension in gen-rec
+
+2. Fitting Method: scipy.optimize.curve_fit (Levenberg-Marquardt)
+   - Non-linear least squares minimization
+   - Covariance matrix -> parameter standard errors -> 95% CI
+
+3. Model Selection: AIC / BIC
+   - AIC = 2k - 2*ln(L), penalizes complexity
+   - BIC = k*ln(n) - 2*ln(L), stronger penalty for small n
+   - Delta AIC > 2: meaningful difference
+
+4. Overfitting Caveat:
+   - n=4 data points, k=3 parameters -> DOF=1
+   - R^2 is mechanically high; statistical power is limited
+   - The fit captures the qualitative trend (monotone decay + saturation)
+   - Quantitative extrapolation beyond [5K, 100K] requires more data
+   - Recommended: add N=10K, 30K, 70K experiments for robust validation
+
+5. HR@10=0.05 Threshold:
+   - Industry heuristic for recall-stage minimum viability
+   - E-commerce: top-10 hit ~5% -> acceptable click-through
+   - Ref: RecSys Challenge baselines, ByteDance short-video HR@10 ~0.03-0.08
+   - Not a universal standard; domain-dependent

@@ -1,0 +1,9 @@
+{
+  "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+  "input_dim": 1024,
+  "codebook_size": 256,
+  "n_levels": 3,
+  "trained_on": "S3",
+  "n_trained_items": 100000,
+  "s3_collision_rate": 0.35880999999999996
+}

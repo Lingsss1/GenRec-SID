@@ -1,0 +1,49 @@
+{
+  "models": [
+    {
+      "name": "M_N_5K",
+      "N": 5000,
+      "model_dir": "models/results_20260306_142557/train/runs/M_N_5K/final_checkpoint",
+      "test_file": "data/sequences/S1/test.csv",
+      "index_file": "data/sequences/S1/S1.index.json",
+      "trie_file": "trie/S1_prefix_trie.json",
+      "available": false,
+      "note": "M_N_5K 已在别处训练完成，需确认 final_checkpoint 路径"
+    },
+    {
+      "name": "M_N_20K",
+      "N": 20000,
+      "model_dir": "models/results_N20K/train/runs/M_N_20K/final_checkpoint",
+      "test_file": "data/sequences/S2/test.csv",
+      "index_file": "data/sequences/S2/S2.index.json",
+      "trie_file": "trie/S2_prefix_trie.json",
+      "available": false,
+      "note": "M_N_20K 正在服务器训练中，完成后下载并更新 model_dir"
+    },
+    {
+      "name": "M_N_50K",
+      "N": 50000,
+      "model_dir": "models/results_20260306_142557/train/runs/M_N_50K/final_checkpoint",
+      "test_file": "data/sequences/S2.5/test.csv",
+      "index_file": "data/sequences/S2.5/S2.5.index.json",
+      "trie_file": "trie/S2.5_prefix_trie.json",
+      "available": true,
+      "note": "已下载，可直接评估"
+    },
+    {
+      "name": "M_N_100K",
+      "N": 100000,
+      "model_dir": "models/results_20260306_142557/train/runs/M_N_100K/final_checkpoint",
+      "test_file": "data/sequences/S3/test.csv",
+      "index_file": "data/sequences/S3/S3.index.json",
+      "trie_file": "trie/S3_prefix_trie.json",
+      "available": true,
+      "note": "已下载，可直接评估"
+    }
+  ],
+  "beams": [20, 50, 100],
+  "topk": 10,
+  "batch_size": 4,
+  "output_json": "analysis/results_summary.json",
+  "max_samples": 2000
+}

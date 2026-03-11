@@ -1,0 +1,31 @@
+{
+  "model_path": "train/runs/M_N_5K/final_checkpoint",
+  "base_model": "train/runs/M_N_5K/final_checkpoint",
+  "train_file": "data/sequences/S1/train.csv",
+  "eval_file": "data/sequences/S1/valid.csv",
+  "sid_index_path": "data/sequences/S1/S1.index.json",
+  "item_meta_path": "data/sequences/S1/S1.item.json",
+  "output_dir": "train/runs/RL_M_N_5K",
+
+  "train_batch_size": 8,
+  "eval_batch_size": 8,
+  "gradient_accumulation_steps": 4,
+  "num_generations": 8,
+  "num_train_epochs": 1,
+  "learning_rate": 1e-6,
+  "beta": 0.04,
+  "temperature": 1.0,
+  "max_completion_length": 64,
+
+  "beam_search": false,
+  "test_during_training": false,
+  "test_beam": 20,
+
+  "reward_type": "rule",
+  "dapo": false,
+
+  "eval_step": 0.5,
+  "sample": -1,
+  "seq_title_sample": 5000,
+  "seed": 42
+}

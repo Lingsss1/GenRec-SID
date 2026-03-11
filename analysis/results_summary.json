@@ -1,0 +1,152 @@
+[
+  {
+    "model": "M_N_5K",
+    "N": 5000,
+    "beam": 20,
+    "HR@10": 0.042427,
+    "NDCG@10": 0.020529,
+    "num_samples": 2357
+  },
+  {
+    "model": "M_N_5K",
+    "N": 5000,
+    "beam": 50,
+    "HR@10": 0.044124,
+    "NDCG@10": 0.021341,
+    "num_samples": 2357
+  },
+  {
+    "model": "M_N_5K",
+    "N": 5000,
+    "beam": 100,
+    "HR@10": 0.044972,
+    "NDCG@10": 0.021501,
+    "num_samples": 2357
+  },
+  {
+    "model": "SFT_M_N_5K (re-eval)",
+    "N": 5000,
+    "beam": 20,
+    "HR@10": 0.0628,
+    "NDCG@10": 0.0311,
+    "num_samples": 2357,
+    "note": "SFT baseline re-evaluated on valid.csv for RL comparison"
+  },
+  {
+    "model": "SFT_M_N_5K (re-eval)",
+    "N": 5000,
+    "beam": 50,
+    "HR@10": 0.0581,
+    "NDCG@10": 0.0308,
+    "num_samples": 2357,
+    "note": "SFT baseline re-evaluated on valid.csv for RL comparison"
+  },
+  {
+    "model": "SFT_M_N_5K (re-eval)",
+    "N": 5000,
+    "beam": 100,
+    "HR@10": 0.0577,
+    "NDCG@10": 0.0308,
+    "num_samples": 2357,
+    "note": "SFT baseline re-evaluated on valid.csv for RL comparison"
+  },
+  {
+    "model": "RL_M_N_5K (GRPO)",
+    "N": 5000,
+    "beam": 20,
+    "HR@10": 0.0649,
+    "NDCG@10": 0.0325,
+    "num_samples": 2357,
+    "note": "GRPO RL trained on 1000 samples, 1 epoch, rule reward, beta=0.04"
+  },
+  {
+    "model": "RL_M_N_5K (GRPO)",
+    "N": 5000,
+    "beam": 50,
+    "HR@10": 0.0628,
+    "NDCG@10": 0.0318,
+    "num_samples": 2357,
+    "note": "GRPO RL trained on 1000 samples, 1 epoch, rule reward, beta=0.04"
+  },
+  {
+    "model": "RL_M_N_5K (GRPO)",
+    "N": 5000,
+    "beam": 100,
+    "HR@10": 0.0594,
+    "NDCG@10": 0.0308,
+    "num_samples": 2357,
+    "note": "GRPO RL trained on 1000 samples, 1 epoch, rule reward, beta=0.04"
+  },
+  {
+    "model": "M_N_20K",
+    "N": 20000,
+    "beam": 20,
+    "HR@10": 0.0308,
+    "NDCG@10": 0.016673,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_20K",
+    "N": 20000,
+    "beam": 50,
+    "HR@10": 0.0318,
+    "NDCG@10": 0.017047,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_20K",
+    "N": 20000,
+    "beam": 100,
+    "HR@10": 0.0324,
+    "NDCG@10": 0.017286,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_50K",
+    "N": 50000,
+    "beam": 20,
+    "HR@10": 0.0256,
+    "NDCG@10": 0.013754,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_50K",
+    "N": 50000,
+    "beam": 50,
+    "HR@10": 0.026,
+    "NDCG@10": 0.014024,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_50K",
+    "N": 50000,
+    "beam": 100,
+    "HR@10": 0.0268,
+    "NDCG@10": 0.014196,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_100K",
+    "N": 100000,
+    "beam": 20,
+    "HR@10": 0.025,
+    "NDCG@10": 0.014215,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_100K",
+    "N": 100000,
+    "beam": 50,
+    "HR@10": 0.0266,
+    "NDCG@10": 0.01514,
+    "num_samples": 5000
+  },
+  {
+    "model": "M_N_100K",
+    "N": 100000,
+    "beam": 100,
+    "HR@10": 0.0264,
+    "NDCG@10": 0.015035,
+    "num_samples": 5000
+  }
+]

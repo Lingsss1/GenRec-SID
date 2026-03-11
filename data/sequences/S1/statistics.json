@@ -1,0 +1,14 @@
+{
+  "subset_name": "S1",
+  "N_train": 1464,
+  "D_train": 2761,
+  "C_mean": 1.885928961748634,
+  "avg_context_length": 1.379934806229627,
+  "n_valid": 2357,
+  "n_test": 2357,
+  "avg_valid_input_length": 1.2829868476877386,
+  "avg_test_input_length": 2.282986847687739,
+  "test_coverage_in_train": 0.49382716049382713,
+  "n_test_items": 1215,
+  "n_test_items_in_train": 600
+}
