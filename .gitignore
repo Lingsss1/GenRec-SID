@@ -43,8 +43,7 @@ trie/S2_prefix_trie.json
 trie/S2.5_prefix_trie.json
 trie/S3_prefix_trie.json
 
-# Generated images
-*.png
+# Generated images (keep project figures, exclude large renders)
 *.jpg
 *.jpeg
 

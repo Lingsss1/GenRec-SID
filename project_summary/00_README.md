@@ -67,6 +67,16 @@
 - 命令速查
 - 常见问题 FAQ
 
+### [11_强化学习训练.md](11_强化学习训练.md) 🎯
+- GRPO 算法原理与损失函数
+- 三种奖励函数设计（Rule / Ranking / Hierarchy）
+- RL 多任务数据集
+- 约束解码在 RL 中的应用
+- Reference Model 管理与双卡优化
+- 7 组训练配置矩阵
+- SFT vs GRPO 实验结果
+- 与 MiniOneRec 原始实现的对比
+
 ### 📊 数据分析文件
 - **results_summary.json**：原始评估数据（12 组实验）
 - **analyze_results.py**：完整数据分析脚本（幂律拟合 + 可视化）
@@ -100,6 +110,9 @@
 
 ### 想看幂律 Scaling Law 分析？🔬
 → 阅读 [08_关键发现_幂律Scaling.md](08_关键发现_幂律Scaling.md)
+
+### 想了解强化学习训练？🎯
+→ 阅读 [11_强化学习训练.md](11_强化学习训练.md)
 
 ### 想看详细的数据分析？📊
 → 查看 `complete_scaling_analysis.png`（可视化图表）
@@ -144,7 +157,8 @@
 - **基座模型**：Qwen2.5-0.5B-Instruct
 - **嵌入模型**：Qwen3-Embedding-0.6B
 - **离散化**：FAISS Residual Quantizer（3 层，codebook=256）
-- **训练框架**：Transformers + Accelerate
+- **训练框架**：Transformers + Accelerate + TRL (GRPO)
+- **强化学习**：GRPO + Rule/Ranking/Hierarchy Reward
 - **评估**：约束解码 + HR@K / NDCG@K
 - **数据来源**：Amazon Reviews 2023（Cell Phones & Accessories）
 
